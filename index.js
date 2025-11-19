@@ -247,3 +247,9 @@ async function myFunc() {
 }
 
 myFunc()
+
+async function myFunc1() {
+    console.log('My Name')
+}
+
+myFunc1()
