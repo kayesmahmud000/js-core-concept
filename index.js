@@ -253,3 +253,24 @@ async function myFunc1() {
 }
 
 myFunc1()
+
+function X(){
+    for(let i=1; i<=5; i++ ){
+        setTimeout(()=>{
+            console.log(i)
+        }, i *1000)
+    }
+}
+X()
+
+function Y (){
+    for (var i=1;i<= 5; i++){
+        function Z(x){
+            setTimeout(()=>{
+                console.log(x)
+            }, x*1000)
+        }
+        Z(i)
+    }
+}
+Y()
