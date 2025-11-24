@@ -50,3 +50,8 @@ console.log(output)
  },{})
 
  console.log(listOfAge)
+
+
+ const listOfMoreAge = users.filter((user)=> user.age >50).map((user=>user.firstName))
+
+ console.log(listOfMoreAge)
