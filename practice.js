@@ -21,3 +21,32 @@ const output= arr.reduce( (max, crr)=>{
 }, 0)
 
 console.log(output)
+
+
+ const users=[
+    { firstName :'Jon', lastName:'Due', age:43},
+    { firstName :'Akshay', lastName:'Saine', age:33},
+    { firstName :'Elon', lastName:'Mask', age:50},
+    { firstName :'Bil', lastName:'Gets', age:55},
+    { firstName :'Donal', lastName:'Tramp', age:50},
+    { firstName :'SR', lastName:'Khan', age:55},
+ ]
+
+ //TASK: list of the full name this users
+
+ const listOfFullName = users.map(user =>user.firstName+ " " + user.lastName)
+
+ console.log(listOfFullName)
+
+
+//  list of the age og this users
+ const listOfAge =users.reduce((acc, crr)=>{
+    if(acc[crr.age]){
+        acc[crr.age]= ++acc[crr.age]
+    }else{
+        acc[crr.age] =1
+    }
+    return acc
+ },{})
+
+ console.log(listOfAge)
